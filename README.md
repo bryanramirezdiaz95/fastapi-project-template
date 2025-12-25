@@ -47,9 +47,6 @@ project-name/
 ├── README.md
 └── docker-compose.yml # Optional
 
-yaml
-Copiar código
-
 ---
 
 ## 🧠 Architecture Overview
@@ -83,25 +80,20 @@ git clone https://github.com/your-username/fastapi-template.git
 cd fastapi-template
 2️⃣ Create and activate a virtual environment
 bash
-Copiar código
 python -m venv venv
 Windows
 
 bash
-Copiar código
 venv\Scripts\activate
 macOS / Linux
 
 bash
-Copiar código
 source venv/bin/activate
 3️⃣ Install dependencies
 bash
-Copiar código
 pip install -r requirements.txt
 4️⃣ Run the application
 bash
-Copiar código
 uvicorn app.main:app --reload
 5️⃣ Access the API
 API: http://127.0.0.1:8000
@@ -112,13 +104,11 @@ ReDoc: http://127.0.0.1:8000/redoc
 
 🧪 Running Tests
 bash
-Copiar código
 pytest
 🔐 Environment Variables
 Create a .env file in the root directory:
 
 env
-Copiar código
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
 SECRET_KEY=your-secret-key
 ⚠️ .env is ignored by Git for security reasons.
@@ -129,18 +119,15 @@ Dependencies are managed using requirements.txt.
 To update dependencies:
 
 bash
-Copiar código
 pip freeze > requirements.txt
 To install dependencies in another environment:
 
 bash
-Copiar código
 pip install -r requirements.txt
 🔄 API Versioning
 All endpoints are versioned under:
 
 bash
-Copiar código
 /api/v1/
 This allows backward compatibility as the application evolves.
 
@@ -148,7 +135,6 @@ This allows backward compatibility as the application evolves.
 If Docker support is enabled:
 
 bash
-Copiar código
 docker-compose up --build
 📈 Best Practices Followed
 Clear separation of concerns
